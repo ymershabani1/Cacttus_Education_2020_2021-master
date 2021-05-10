@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AnimationActivity">
+
+    <Button
+        android:id="@+id/btnBounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bounce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/btnFadeInOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fade In Out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBounce"/>
+    <Button
+        android:id="@+id/btnMove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFadeInOut"/>
+
+
+    <ImageView
+        android:id="@+id/ivCacttus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cacttus_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMove"
+        app:tint="@color/colorBlack"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

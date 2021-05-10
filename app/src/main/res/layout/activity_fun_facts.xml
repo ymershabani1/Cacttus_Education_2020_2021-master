@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#ff51b46d"
+    tools:context=".activities.FunFactsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cacttus_logo"/>
+
+    <TextView
+        android:id="@+id/tvDidYouKnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did you know?"
+        android:textSize="23sp"
+        android:fontFamily="@font/capriola"
+        android:textColor="@color/colorGrey"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coca cola was originally green!"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/capriola"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/btnShowAnotherFunFact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20sp"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/capriola"
+        android:padding="20dp"
+        android:text="Show Another Fun Fact"
+        android:textAllCaps="false"
+        android:textColor="#ff51b46d" />
+
+
+
+</RelativeLayout>
